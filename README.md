@@ -1,3 +1,7 @@
+mở git bash: git clone để lấy project về
+hoặc
+https://drive.google.com/drive/folders/1Q7etD5SsfWzeNp_f4s7NKpiwpQQ6L7-d
+
 Cách hướng dẫn chạy code:
 
 1. Cài đặt thư viện:
