@@ -1,0 +1,332 @@
+[
+  {
+    "company_id": "C002",
+    "fiscal_year": 2022,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (26.0%) vượt xa tốc độ tăng doanh thu (8.6%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2021-2022"
+    }
+  },
+  {
+    "company_id": "C002",
+    "fiscal_year": 2023,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (39.1%) vượt xa tốc độ tăng doanh thu (12.1%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2022-2023"
+    }
+  },
+  {
+    "company_id": "C002",
+    "fiscal_year": 2024,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (39.6%) vượt xa tốc độ tăng doanh thu (14.2%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2023-2024"
+    }
+  },
+  {
+    "company_id": "C002",
+    "fiscal_year": 2025,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (31.1%) vượt xa tốc độ tăng doanh thu (13.1%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2024-2025"
+    }
+  },
+  {
+    "company_id": "C003",
+    "fiscal_year": 2022,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (24.0%) vượt xa tốc độ tăng doanh thu (7.3%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2021-2022"
+    }
+  },
+  {
+    "company_id": "C003",
+    "fiscal_year": 2023,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (45.9%) vượt xa tốc độ tăng doanh thu (8.4%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2022-2023"
+    }
+  },
+  {
+    "company_id": "C003",
+    "fiscal_year": 2024,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (47.4%) vượt xa tốc độ tăng doanh thu (8.6%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2023-2024"
+    }
+  },
+  {
+    "company_id": "C003",
+    "fiscal_year": 2025,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (41.4%) vượt xa tốc độ tăng doanh thu (7.5%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2024-2025"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2022,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (23.5%) vượt xa tốc độ tăng doanh thu (4.5%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2021-2022"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2023,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (31.1%) vượt xa tốc độ tăng doanh thu (3.9%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2022-2023"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2024,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (25.2%) vượt xa tốc độ tăng doanh thu (2.7%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2023-2024"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2024,
+    "signal_type": "LOW_EARNINGS_QUALITY",
+    "severity": "CRITICAL",
+    "message": "Lợi nhuận ròng dương (58,906) nhưng Dòng tiền kinh doanh (CFO) âm (-26,968).",
+    "evidence_trace": {
+      "file": "income_statement.csv & cashflow.csv",
+      "fields": [
+        "net_income_vnd_mn",
+        "net_cash_from_operating_activities_vnd_mn"
+      ],
+      "period": "2024"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2025,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (17.3%) vượt xa tốc độ tăng doanh thu (2.0%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2024-2025"
+    }
+  },
+  {
+    "company_id": "C007",
+    "fiscal_year": 2025,
+    "signal_type": "LOW_EARNINGS_QUALITY",
+    "severity": "CRITICAL",
+    "message": "Lợi nhuận ròng dương (37,530) nhưng Dòng tiền kinh doanh (CFO) âm (-20,564).",
+    "evidence_trace": {
+      "file": "income_statement.csv & cashflow.csv",
+      "fields": [
+        "net_income_vnd_mn",
+        "net_cash_from_operating_activities_vnd_mn"
+      ],
+      "period": "2025"
+    }
+  },
+  {
+    "company_id": "C008",
+    "fiscal_year": 2023,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (37.9%) vượt xa tốc độ tăng doanh thu (11.6%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2022-2023"
+    }
+  },
+  {
+    "company_id": "C008",
+    "fiscal_year": 2024,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (46.7%) vượt xa tốc độ tăng doanh thu (10.8%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2023-2024"
+    }
+  },
+  {
+    "company_id": "C008",
+    "fiscal_year": 2025,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (37.2%) vượt xa tốc độ tăng doanh thu (10.2%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2024-2025"
+    }
+  },
+  {
+    "company_id": "C012",
+    "fiscal_year": 2022,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (27.7%) vượt xa tốc độ tăng doanh thu (6.4%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2021-2022"
+    }
+  },
+  {
+    "company_id": "C012",
+    "fiscal_year": 2023,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (32.7%) vượt xa tốc độ tăng doanh thu (6.2%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2022-2023"
+    }
+  },
+  {
+    "company_id": "C012",
+    "fiscal_year": 2024,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (28.0%) vượt xa tốc độ tăng doanh thu (4.3%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2023-2024"
+    }
+  },
+  {
+    "company_id": "C012",
+    "fiscal_year": 2024,
+    "signal_type": "LOW_EARNINGS_QUALITY",
+    "severity": "CRITICAL",
+    "message": "Lợi nhuận ròng dương (65,986) nhưng Dòng tiền kinh doanh (CFO) âm (-62,611).",
+    "evidence_trace": {
+      "file": "income_statement.csv & cashflow.csv",
+      "fields": [
+        "net_income_vnd_mn",
+        "net_cash_from_operating_activities_vnd_mn"
+      ],
+      "period": "2024"
+    }
+  },
+  {
+    "company_id": "C012",
+    "fiscal_year": 2025,
+    "signal_type": "RECEIVABLES_SPIKE",
+    "severity": "HIGH",
+    "message": "Tốc độ tăng khoản phải thu (21.9%) vượt xa tốc độ tăng doanh thu (1.9%).",
+    "evidence_trace": {
+      "file": "balance_sheet.csv & income_statement.csv",
+      "fields": [
+        "accounts_receivable_vnd_mn",
+        "revenue_vnd_mn"
+      ],
+      "period": "2024-2025"
+    }
+  }
+]
