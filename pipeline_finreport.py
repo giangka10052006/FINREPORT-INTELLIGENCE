@@ -27,9 +27,9 @@ class FinReportPipeline:
             assert len(df) == 60, f"File {name} có {len(df)} dòng (cần 60)!"
 
         master = bs.merge(cf, on=['company_id', 'fiscal_year'], how='inner', suffixes=('', '_cf')) \
-                   .merge(is_df, on=['company_id', 'fiscal_year'], how='inner', suffixes=('', '_is')) \
-                   .merge(notes, on=['company_id', 'fiscal_year'], how='inner', suffixes=('', '_notes')) \
-                   .merge(info, on='company_id', how='inner', suffixes=('', '_info'))
+                .merge(is_df, on=['company_id', 'fiscal_year'], how='inner', suffixes=('', '_is')) \
+                .merge(notes, on=['company_id', 'fiscal_year'], how='inner', suffixes=('', '_notes')) \
+                .merge(info, on='company_id', how='inner', suffixes=('', '_info'))
 
         assert len(
             master) == 60, f"Bảng Master bị lệch số dòng: {len(master)} dòng (cần 60)!"
@@ -43,7 +43,7 @@ class FinReportPipeline:
         assert bs_check.all(), "Phép kiểm 1 Thất bại: Tài sản != Nợ + Vốn chủ!"
 
         cf_check = np.isclose(master['beginning_cash_vnd_mn'] +
-                              master['net_change_in_cash_vnd_mn'], master['ending_cash_vnd_mn'], atol=1e-3)
+                            master['net_change_in_cash_vnd_mn'], master['ending_cash_vnd_mn'], atol=1e-3)
         assert cf_check.all(), "Phép kiểm 2 Thất bại: Tiền đầu kỳ + Biến động != Tiền cuối kỳ!"
 
         
@@ -141,6 +141,20 @@ class FinReportPipeline:
     def export_results(self, output_dir="output"):
         os.makedirs(output_dir, exist_ok=True)
 
+        # Bổ sung tính toán các chỉ số tài chính nâng cao trước khi xuất file
+        self.master_df['dso'] = (
+            self.master_df['accounts_receivable_vnd_mn'] / self.master_df['revenue_vnd_mn']) * 365
+        self.master_df['inventory_days'] = (
+            self.master_df['inventory_vnd_mn'] / self.master_df['cost_of_goods_sold_vnd_mn']) * 365
+        self.master_df['dpo'] = (self.master_df['accounts_payable_vnd_mn'] /
+                                 self.master_df['cost_of_goods_sold_vnd_mn']) * 365
+        self.master_df['working_capital'] = self.master_df['total_current_assets_vnd_mn'] - \
+            self.master_df['total_current_liabilities_vnd_mn']
+        self.master_df['free_cash_flow'] = self.master_df['net_cash_from_operating_activities_vnd_mn'] + \
+            self.master_df['capital_expenditure_vnd_mn']
+        self.master_df['cfo_to_net_income'] = self.master_df['net_cash_from_operating_activities_vnd_mn'] / \
+            self.master_df['net_income_vnd_mn']
+
         master_path = os.path.join(output_dir, "master_financial_data.csv")
         self.master_df.to_csv(master_path, index=False)
 
@@ -153,9 +167,7 @@ class FinReportPipeline:
         print(f"   - Tệp Cảnh báo: {alerts_path}")
 
 
-# ==========================================
 # KHỞI CHẠY PIPELINE
-# ==========================================
 if __name__ == "__main__":
     pipeline = FinReportPipeline()
     pipeline.load_and_validate_data()
