@@ -1,6 +1,6 @@
 mở git bash: git clone để lấy project về
 hoặc
-https://drive.google.com/drive/folders/1Q7etD5SsfWzeNp_f4s7NKpiwpQQ6L7-d
+https://drive.google.com/drive/folders/1Soo8iQQbi5CeiEIn5p7WOeD2a6B0hVLe
 
 Cách hướng dẫn chạy code:
 
